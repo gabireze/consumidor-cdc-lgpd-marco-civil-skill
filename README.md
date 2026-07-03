@@ -1,12 +1,12 @@
 # consumidor-cdc-br-skill
 
-![status](https://img.shields.io/badge/status-pronto%20com%20adapter%20opcional-brightgreen)
-![versao](https://img.shields.io/badge/versao-1.3.0-blue)
+![status](https://img.shields.io/badge/status-pronto%20e%20otimizado-brightgreen)
+![versao](https://img.shields.io/badge/versao-1.4.0-blue)
 ![idioma](https://img.shields.io/badge/idioma-pt--BR-yellow)
 ![dominio](https://img.shields.io/badge/dominio-CDC%20%7C%20LGPD%20%7C%20Marco%20Civil-purple)
 ![fontes](https://img.shields.io/badge/fontes-oficiais%20primeiro-success)
 ![validacao](https://img.shields.io/badge/validacao-Skill%20is%20valid-brightgreen)
-![licenca](https://img.shields.io/badge/licenca-nao%20definida-lightgrey)
+![licenca](https://img.shields.io/badge/licenca-Apache--2.0%20%7C%20CC--BY--4.0-blue)
 
 Skill/knowledge pack em portugues do Brasil para agentes de IA trabalharem com relacoes de consumo, produtos digitais, privacidade e uso da internet no Brasil, com foco em **CDC**, **LGPD**, **Marco Civil da Internet**, **ANPD**, **Senacon**, **Procon**, **Consumidor.gov.br**, plataformas digitais, marketplaces, assinaturas, comunicados, politicas, termos, cancelamento, cobrancas, garantias, SAC, logs, moderacao, incidentes e transferencia internacional de dados.
 
@@ -36,13 +36,13 @@ O pacote foi desenhado para Codex, mas os arquivos sao Markdown portateis e pode
 | Campo | Valor |
 |---|---|
 | Nome da skill | `consumidor-cdc-br` |
-| Versao | `1.3.0` |
+| Versao | `1.4.0` |
 | Ultima revisao manual | `2026-07-03` |
 | Ultima validacao de prontidao | `2026-07-03` |
 | Idioma | Portugues do Brasil |
 | Escopo | Juridico-informativo, consumerista, privacidade e plataformas digitais |
 | Validacao Codex | `quick_validate.py .` retornou `Skill is valid!` |
-| Veredito para agentes | Pronto com adapter opcional |
+| Veredito para agentes | Pronto e otimizado (Padrão Gemini/Antigravity) |
 
 ## O Que Esta Skill Faz
 
@@ -86,12 +86,12 @@ Use apenas como triagem e organizacao quando houver:
 | Ambiente | Status | Forma recomendada de uso |
 |---|---|---|
 | Codex | Pronto | Instalar a pasta como skill. `SKILL.md` e `agents/openai.yaml` sao consumidos pelo ecossistema compatível. |
-| OpenAI custom agents | Pronto com ajuste leve | Usar `SKILL.md` como instrucao principal e anexar `docs/`, `templates/` e `evals/` como conhecimento. |
+| OpenAI custom agents | Pronto com ajuste leve | Usar `SKILL.md` como instrucao principal e anexar `references/`, `assets/` e `evals/` como conhecimento. |
 | ChatGPT/GPTs | Pronto como conhecimento | Colocar o conteudo de `SKILL.md` nas instrucoes e anexar as referencias principais. |
-| Claude Projects/Skills | Pronto como conhecimento | Usar `SKILL.md` como roteador e anexar `docs/` e `templates/`. |
-| Gemini/Gems | Pronto como conhecimento | Usar `SKILL.md` como instrucao da Gem e anexar arquivos essenciais. |
-| Agentes internos/RAG | Pronto | Indexar `docs/` por arquivo e usar `SKILL.md` como policy/router. |
-| Cursos e treinamentos | Pronto | Usar README, SKILL, checklists, templates e `evals/casos-teste.md`. |
+| Claude Projects/Skills | Pronto como conhecimento | Usar `SKILL.md` como roteador e anexar `references/` e `assets/`. |
+| Gemini/Gems | Pronto e otimizado | Skill e diretórios estruturados nativamente (`references/`, `assets/`, `evals/`). |
+| Agentes internos/RAG | Pronto | Indexar `references/` por arquivo e usar `SKILL.md` como policy/router. |
+| Cursos e treinamentos | Pronto | Usar README, SKILL, checklists, assets e `evals/casos-teste.md`. |
 
 Observacao: Codex consegue usar o formato de skill diretamente. Outras plataformas normalmente precisam receber os arquivos como conhecimento, contexto de projeto, prompt de sistema ou adapter proprio.
 
@@ -118,8 +118,8 @@ Use $consumidor-cdc-br para revisar esta politica de cancelamento de assinatura 
 Use este pacote como conhecimento:
 
 1. Defina `SKILL.md` como instrucao principal.
-2. Anexe os arquivos essenciais de `docs/`.
-3. Inclua `templates/` se o agente for redigir reclamacoes ou comunicados.
+2. Anexe os arquivos essenciais de `references/`.
+3. Inclua `assets/` se o agente for redigir reclamacoes ou comunicados.
 4. Inclua `evals/casos-teste.md` para validar comportamento.
 5. Instrua o agente a consultar fontes oficiais atuais antes de citar norma, prazo, canal ou entendimento sensivel.
 
@@ -128,13 +128,13 @@ Use este pacote como conhecimento:
 Para ambientes com limite de contexto, priorize:
 
 - `SKILL.md`
-- `docs/fontes-oficiais.md`
-- `docs/pesquisa-e-atualizacao.md`
-- `docs/matriz-temas-e-fontes.md`
-- `docs/politica-de-resposta.md`
-- `docs/lgpd-protecao-dados.md`
-- `docs/marco-civil-internet.md`
-- `docs/revisao-produtos-digitais.md`
+- `references/fontes-oficiais.md`
+- `references/pesquisa-e-atualizacao.md`
+- `references/matriz-temas-e-fontes.md`
+- `references/politica-de-resposta.md`
+- `references/lgpd-protecao-dados.md`
+- `references/marco-civil-internet.md`
+- `references/revisao-produtos-digitais.md`
 
 ## Estrutura do Pacote
 
@@ -145,7 +145,7 @@ consumidor-cdc-br-skill/
   VALIDATION_REPORT.md
   agents/
     openai.yaml
-  docs/
+  references/
     agent-readiness-validation.md
     fontes-oficiais.md
     pesquisa-e-atualizacao.md
@@ -167,7 +167,7 @@ consumidor-cdc-br-skill/
       reclamacao-procon-consumidor-gov.md
       sac-e-atendimento.md
       superendividamento.md
-  templates/
+  assets/
     comunicado-alteracao-termos.md
     notificacao-extrajudicial-fornecedor.md
     reclamacao-consumidor-gov.md
@@ -182,18 +182,18 @@ consumidor-cdc-br-skill/
 |---|---|
 | `SKILL.md` | Entrada principal da skill. Define gatilhos, principios, fluxo e roteamento para referencias. |
 | `agents/openai.yaml` | Metadados de interface para ambientes compatíveis com esse formato. |
-| `docs/fontes-oficiais.md` | Indice de fontes oficiais: Planalto, ANPD, Senacon, Consumidor.gov.br, STJ e normas correlatas. |
-| `docs/pesquisa-e-atualizacao.md` | Protocolo para verificar vigencia, citar normas e navegar na internet. |
-| `docs/matriz-temas-e-fontes.md` | Matriz para escolher base legal inicial por tema. |
-| `docs/politica-de-resposta.md` | Regras de cautela, formatos de resposta e frases proibidas. |
-| `docs/artigos-chave-cdc.md` | Resumo operacional de artigos recorrentes do CDC. |
-| `docs/lgpd-protecao-dados.md` | Guia LGPD: dados pessoais, bases legais, direitos, ANPD, incidentes e transferencia internacional. |
-| `docs/marco-civil-internet.md` | Guia Marco Civil: provedores, registros, logs, neutralidade, moderacao e conteudo de terceiro. |
-| `docs/revisao-produtos-digitais.md` | Guia para revisar apps, SaaS, marketplaces, termos, politicas e comunicados. |
-| `docs/checklists/` | Checklists especificos por tema. |
-| `templates/` | Modelos adaptaveis de reclamacao, notificacao e comunicado. |
+| `references/fontes-oficiais.md` | Indice de fontes oficiais: Planalto, ANPD, Senacon, Consumidor.gov.br, STJ e normas correlatas. |
+| `references/pesquisa-e-atualizacao.md` | Protocolo para verificar vigencia, citar normas e navegar na internet. |
+| `references/matriz-temas-e-fontes.md` | Matriz para escolher base legal inicial por tema. |
+| `references/politica-de-resposta.md` | Regras de cautela, formatos de resposta e frases proibidas. |
+| `references/artigos-chave-cdc.md` | Resumo operacional de artigos recorrentes do CDC. |
+| `references/lgpd-protecao-dados.md` | Guia LGPD: dados pessoais, bases legais, direitos, ANPD, incidentes e transferencia internacional. |
+| `references/marco-civil-internet.md` | Guia Marco Civil: provedores, registros, logs, neutralidade, moderacao e conteudo de terceiro. |
+| `references/revisao-produtos-digitais.md` | Guia para revisar apps, SaaS, marketplaces, termos, politicas e comunicados. |
+| `references/checklists/` | Checklists especificos por tema. |
+| `assets/` | Modelos adaptaveis de reclamacao, notificacao e comunicado (templates). |
 | `evals/casos-teste.md` | Casos de validacao para testar agentes. |
-| `docs/agent-readiness-validation.md` | Relatorio de prontidao para uso por agentes. |
+| `references/agent-readiness-validation.md` | Relatorio de prontidao para uso por agentes. |
 | `VALIDATION_REPORT.md` | Historico resumido da revisao da skill. |
 
 ## Fluxo de Trabalho do Agente
@@ -276,12 +276,12 @@ Skill is valid!
 
 Relatorio completo:
 
-- `docs/agent-readiness-validation.md`
+- `references/agent-readiness-validation.md`
 
 Veredito:
 
 ```text
-PRONTO COM ADAPTER OPCIONAL
+PRONTO E OTIMIZADO (PADRÃO GEMINI/ANTIGRAVITY)
 ```
 
 ### Casos de Teste
@@ -318,6 +318,7 @@ Cobertura atual:
 | `1.1.0` | 2026-07-03 | Escopo ampliado para produtos digitais, politicas e comunicados. |
 | `1.2.0` | 2026-07-03 | Reorganizacao reutilizavel, fontes oficiais, Marco Civil, plataformas e validacao de readiness. |
 | `1.3.0` | 2026-07-03 | Inclusao robusta de LGPD, ANPD, incidentes, transferencia internacional, cookies e dados pessoais. |
+| `1.4.0` | 2026-07-03 | Reestruturação para o padrão Gemini/Antigravity (references, resources, examples) e links Markdown. |
 
 ### Rotina Recomendada
 
@@ -332,8 +333,8 @@ Revalidar quando houver:
 
 Checklist de manutencao:
 
-1. Conferir `docs/fontes-oficiais.md`.
-2. Atualizar `docs/pesquisa-e-atualizacao.md` se o procedimento mudar.
+1. Conferir `references/fontes-oficiais.md`.
+2. Atualizar `references/pesquisa-e-atualizacao.md` se o procedimento mudar.
 3. Atualizar matriz e checklists afetados.
 4. Adicionar caso em `evals/casos-teste.md`.
 5. Rodar `quick_validate.py .`.
@@ -354,6 +355,13 @@ O agente deve evitar:
 - orientar quebra de sigilo, invasao, coleta abusiva de logs ou exposicao de dados pessoais.
 
 Encaminhe para advogado, Defensoria, Procon, ANPD, Anatel, Ministerio Publico, autoridade policial ou regulador setorial quando houver risco relevante.
+
+## Licença
+
+Este repositório utiliza um modelo de licenciamento duplo para separar o conteúdo explicativo e instruções de uso do material de templates reutilizável:
+
+*   **Código, Configurações e Modelos (`assets/`, arquivos de configuração e scripts):** Licenciados sob a **Apache License 2.0**. Consulte o arquivo [LICENSE](file:///LICENSE) para os termos completos.
+*   **Documentação e checklists (`references/`, `evals/` e guias gerais):** Licenciados sob a licença **Creative Commons Attribution 4.0 International (CC-BY-4.0)**. Consulte o arquivo [LICENSE-docs](file:///LICENSE-docs) para mais detalhes.
 
 ## Referencias de Formato Consultadas
 

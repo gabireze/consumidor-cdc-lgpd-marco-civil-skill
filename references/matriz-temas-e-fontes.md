@@ -6,7 +6,7 @@ Use esta matriz para escolher a base jurídica inicial. Ela não substitui a con
 
 1. Escolha o tema principal e, no máximo, dois temas acessórios.
 2. Verifique se há produto digital, dados pessoais, marketplace, assinatura ou setor regulado.
-3. Leia a fonte principal em `docs/fontes-oficiais.md`.
+3. Leia a fonte principal em [fontes-oficiais.md](fontes-oficiais.md).
 4. Responda com uma das classes de certeza: `base legal direta`, `tese plausível`, `tema controvertido` ou `fora do escopo da skill`.
 5. Quando faltar data, comprovante, contrato, política aceita ou print da oferta, não conclua: peça a evidência.
 

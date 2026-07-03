@@ -161,7 +161,7 @@ Uso:
 
 Nota de vigência:
 - Em 2026-07-03, o Decreto nº 12.975/2026 estava publicado, mas ainda não vigente. O art. 2º prevê entrada em vigor 60 dias após a publicação; como o texto informa publicação no DOU de 2026-05-21, trate a vigência como 2026-07-20, salvo conferência oficial posterior.
-- Use `docs/marco-civil-internet.md` para a matriz de análise e cautelas sobre provedores, registros, neutralidade e moderação.
+- Use [marco-civil-internet.md](marco-civil-internet.md) para a matriz de análise e cautelas sobre provedores, registros, neutralidade e moderação.
 
 ### Proteção de crianças e adolescentes em ambientes digitais
 
@@ -197,7 +197,7 @@ Uso:
 Regra:
 - Para política de privacidade, use a LGPD como base primária e o CDC como complemento de transparência consumerista.
 - Sempre use o texto compilado antes de revisar política de privacidade, porque a LGPD já recebeu alterações posteriores.
-- Use `docs/lgpd-protecao-dados.md` para bases legais, direitos do titular, incidentes, transferência internacional, encarregado e ANPD.
+- Use [lgpd-protecao-dados.md](lgpd-protecao-dados.md) para bases legais, direitos do titular, incidentes, transferência internacional, encarregado e ANPD.
 
 ### ANPD
 

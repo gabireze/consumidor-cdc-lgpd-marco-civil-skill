@@ -1,5 +1,6 @@
 ---
 name: consumidor-cdc-br
+license: "Apache-2.0 AND CC-BY-4.0"
 description: "Pesquisa, triagem, redacao e revisao cautelosa sobre relacoes de consumo, uso da internet e protecao de dados no Brasil com CDC, LGPD, Marco Civil, e-commerce, produtos digitais, marketplaces, assinaturas, SAC, Procon, Consumidor.gov.br, ANPD, dados pessoais, bases legais, direitos do titular, incidentes, transferencia internacional, neutralidade de rede, registros, responsabilidade de provedores, moderacao, termos B2C e comunicados ao consumidor. Use quando o pedido envolver consumidor, fornecedor, dados pessoais, privacidade, politica de privacidade, cookies, cadastro, oferta, cancelamento, plataforma digital, aplicacao de internet, provedor, conteudo de terceiros, conta online ou documento consumerista/digital."
 ---
 
@@ -30,35 +31,35 @@ Use esta skill para produzir respostas informativas, rascunhos e revisoes de tex
 
 | Necessidade | Leia |
 |---|---|
-| Fontes oficiais, links e hierarquia | `docs/fontes-oficiais.md` |
-| Regra de atualizacao, citacao e pesquisa | `docs/pesquisa-e-atualizacao.md` |
-| Escolher base por tema | `docs/matriz-temas-e-fontes.md` |
-| Cautelas de linguagem e formato de resposta | `docs/politica-de-resposta.md` |
-| Artigos recorrentes do CDC | `docs/artigos-chave-cdc.md` |
-| LGPD, dados pessoais, bases legais e ANPD | `docs/lgpd-protecao-dados.md` |
-| Marco Civil, provedores, registros e moderacao | `docs/marco-civil-internet.md` |
-| Produtos digitais, SaaS, apps, termos, politicas | `docs/revisao-produtos-digitais.md` |
-| Compra online, arrependimento e e-commerce | `docs/checklists/compra-online.md` |
-| Vicio, defeito, garantia e assistencia | `docs/checklists/garantia-vicio-defeito.md` |
-| Cobranca indevida, cartao, reembolso | `docs/checklists/cobranca-indevida.md` |
-| SAC, protocolo, cancelamento por atendimento | `docs/checklists/sac-e-atendimento.md` |
-| Superendividamento e credito ao consumidor | `docs/checklists/superendividamento.md` |
-| Procon e Consumidor.gov.br | `docs/checklists/reclamacao-procon-consumidor-gov.md` |
-| Termos, politicas e fluxos digitais B2C | `docs/checklists/produtos-digitais-termos-politicas.md` |
-| Comunicados ao consumidor | `docs/checklists/comunicados-consumidor.md` |
-| Cancelamento de assinaturas digitais | `docs/checklists/cancelamento-assinaturas-digitais.md` |
-| Privacidade, cookies, dados e incidentes | `docs/checklists/lgpd-produtos-digitais.md` |
-| Plataforma, moderacao, conta e conteudo | `docs/checklists/marco-civil-plataformas.md` |
-| Casos de validacao da skill | `evals/casos-teste.md` |
+| Fontes oficiais, links e hierarquia | [fontes-oficiais.md](references/fontes-oficiais.md) |
+| Regra de atualizacao, citacao e pesquisa | [pesquisa-e-atualizacao.md](references/pesquisa-e-atualizacao.md) |
+| Escolher base por tema | [matriz-temas-e-fontes.md](references/matriz-temas-e-fontes.md) |
+| Cautelas de linguagem e formato de resposta | [politica-de-resposta.md](references/politica-de-resposta.md) |
+| Artigos recorrentes do CDC | [artigos-chave-cdc.md](references/artigos-chave-cdc.md) |
+| LGPD, dados pessoais, bases legais e ANPD | [lgpd-protecao-dados.md](references/lgpd-protecao-dados.md) |
+| Marco Civil, provedores, registros e moderacao | [marco-civil-internet.md](references/marco-civil-internet.md) |
+| Produtos digitais, SaaS, apps, termos, politicas | [revisao-produtos-digitais.md](references/revisao-produtos-digitais.md) |
+| Compra online, arrependimento e e-commerce | [compra-online.md](references/checklists/compra-online.md) |
+| Vicio, defeito, garantia e assistencia | [garantia-vicio-defeito.md](references/checklists/garantia-vicio-defeito.md) |
+| Cobranca indevida, cartao, reembolso | [cobranca-indevida.md](references/checklists/cobranca-indevida.md) |
+| SAC, protocolo, cancelamento por atendimento | [sac-e-atendimento.md](references/checklists/sac-e-atendimento.md) |
+| Superendividamento e credito ao consumidor | [superendividamento.md](references/checklists/superendividamento.md) |
+| Procon e Consumidor.gov.br | [reclamacao-procon-consumidor-gov.md](references/checklists/reclamacao-procon-consumidor-gov.md) |
+| Termos, politicas e fluxos digitais B2C | [produtos-digitais-termos-politicas.md](references/checklists/produtos-digitais-termos-politicas.md) |
+| Comunicados ao consumidor | [comunicados-consumidor.md](references/checklists/comunicados-consumidor.md) |
+| Cancelamento de assinaturas digitais | [cancelamento-assinaturas-digitais.md](references/checklists/cancelamento-assinaturas-digitais.md) |
+| Privacidade, cookies, dados e incidentes | [lgpd-produtos-digitais.md](references/checklists/lgpd-produtos-digitais.md) |
+| Plataforma, moderacao, conta e conteudo | [marco-civil-plataformas.md](references/checklists/marco-civil-plataformas.md) |
+| Casos de validacao da skill | [casos-teste.md](evals/casos-teste.md) |
 
 ## Modelos disponiveis
 
 Use os templates apenas depois de adaptar fatos, provas, pedido e ressalvas:
 
-- `templates/reclamacao-consumidor-gov.md`
-- `templates/reclamacao-procon.md`
-- `templates/notificacao-extrajudicial-fornecedor.md`
-- `templates/comunicado-alteracao-termos.md`
+- [reclamacao-consumidor-gov.md](assets/reclamacao-consumidor-gov.md)
+- [reclamacao-procon.md](assets/reclamacao-procon.md)
+- [notificacao-extrajudicial-fornecedor.md](assets/notificacao-extrajudicial-fornecedor.md)
+- [comunicado-alteracao-termos.md](assets/comunicado-alteracao-termos.md)
 
 Antes de entregar qualquer modelo, remova dados pessoais desnecessarios, evite acusacoes categóricas e inclua campo de data da consulta das fontes quando houver citacao normativa.
 

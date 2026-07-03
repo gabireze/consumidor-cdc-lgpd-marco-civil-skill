@@ -2,11 +2,11 @@
 
 Data: 2026-07-03
 
-Versão revisada: 1.3.0
+Versão revisada: 1.4.0
 
 ## Resultado
 
-A skill foi revisada para maior precisão jurídica, melhor uso por agentes, melhor aderência ao padrão reutilizável de skills e maior robustez em produtos digitais.
+A skill foi revisada para maior precisão jurídica, melhor uso por agentes, melhor aderência ao padrão reutilizável de skills, maior robustez em produtos digitais e total alinhamento com a estrutura oficial de customizações do Gemini/Antigravity.
 
 ## Principais correções
 
@@ -19,15 +19,16 @@ A skill foi revisada para maior precisão jurídica, melhor uso por agentes, mel
 7. Templates ajustados para reduzir exposição de dados pessoais e separar base consumerista de LGPD.
 8. Casos de teste expandidos para produto digital, marketplace e política de privacidade.
 9. `SKILL.md` reduzido para frontmatter padrão e instruções operacionais, com referências carregáveis sob demanda.
-10. Adicionado `docs/pesquisa-e-atualizacao.md` para protocolo de vigência, citação e navegação.
+10. Adicionado `references/pesquisa-e-atualizacao.md` para protocolo de vigência, citação e navegação.
 11. Adicionado `agents/openai.yaml` com metadados de interface.
 12. Fontes oficiais atualizadas com Lei nº 13.543/2017, Lei nº 13.455/2017, página direta da Lei nº 9.099/1995 no Planalto e cautela sobre Súmula 675/STJ.
-13. Adicionada camada de Marco Civil com `docs/marco-civil-internet.md` e `docs/checklists/marco-civil-plataformas.md`.
+13. Adicionada camada de Marco Civil com `references/marco-civil-internet.md` e `references/checklists/marco-civil-plataformas.md`.
 14. Incluídas fontes oficiais do Marco Civil, Decreto nº 8.771/2016, Decreto nº 12.975/2026, Lei nº 15.211/2025 e Decreto nº 12.880/2026.
 15. Registrada cautela de vigência: em 2026-07-03, o Decreto nº 12.975/2026 ainda estava em vacatio legis, com entrada em vigor prevista para 2026-07-20, salvo conferência oficial posterior.
-16. Adicionada camada LGPD com `docs/lgpd-protecao-dados.md` e `docs/checklists/lgpd-produtos-digitais.md`.
+16. Adicionada camada LGPD com `references/lgpd-protecao-dados.md` e `references/checklists/lgpd-produtos-digitais.md`.
 17. Incluídas fontes oficiais da LGPD compilada, Lei nº 15.352/2026, ANPD, comunicação de incidente, RIPD e regulamentações ANPD.
 18. Matriz expandida para bases legais, dados sensíveis, direitos do titular, encarregado, incidentes, transferência internacional, agentes de pequeno porte e sanções.
+19. Reestruturação da skill para conformidade com a especificação agentskills.io e padrão do Gemini/Antigravity: diretórios `references/` (antiga `docs/`), `assets/` (antiga `templates/`) e `evals/` (contendo os casos de teste em markdown), com conversão de referências para links Markdown clicáveis.
 
 ## Fontes oficiais conferidas
 
