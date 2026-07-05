@@ -374,3 +374,5 @@ Este README foi estruturado com base em padroes publicos de skills e documentaca
 - [Composio awesome-codex-skills](https://github.com/composiohq/awesome-codex-skills)
 
 Essas referencias foram usadas apenas para orientar estrutura documental: proposito, compatibilidade, instalacao, organizacao, validacao e limites.
+
+<!-- GitAds-Verify: TF15EYG6NWID86UYPY9VR79V4SFUPJGD -->
