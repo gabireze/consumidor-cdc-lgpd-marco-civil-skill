@@ -14,6 +14,9 @@ O pacote foi desenhado para Codex, mas os arquivos sao Markdown portateis e pode
 
 > Esta skill e informativa. Ela nao substitui advogado, Defensoria, Procon, ANPD, agencia reguladora, autoridade policial ou revisao juridica humana.
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=gabireze/consumidor-cdc-lgpd-marco-civil-skill@github)](https://gitads.dev/v1/ad-track?source=gabireze/consumidor-cdc-lgpd-marco-civil-skill@github)
+
 ## Sumario
 
 - [Status](#status)
